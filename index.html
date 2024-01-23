@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElSaeed Project</title>
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!--  custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section starts -->
+    <header class="header">
+      <a href="#" class="logo">Al<span> Saeed</span></a>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="#blogs">Blogs</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="info-btn" class="fas fa-info-circle"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input
+          type="search"
+          name=""
+          placeholder="Search here..."
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <form action="" class="login-form">
+        <h3>Login form</h3>
+        <input type="text" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
+        <div class="flex">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+          <a href="#">forgot password?</a>
+        </div>
+        <input type="submit" value="login now" class="btn" />
+        <p>don't have an account <a href="#">create one!</a></p>
+      </form>
+    </header>
+
+    <div class="contact-info">
+      <div id="close-contact-info" class="fas fa-times"></div>
+
+      <div class="info">
+        <i class="fas fa-phone"></i>
+        <h3>phone number</h3>
+        <p>+974-5540-3374</p>
+        <p>+974-4017-8230</p>
+      </div>
+
+      <div class="info">
+        <i class="fas fa-envelope"></i>
+        <h3>email address</h3>
+        <p>info@alsaeed.co</p>
+      </div>
+
+      <div class="info">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>company address</h3>
+        <p>P.O Box: 96373</p>
+        <p>Doha, Qatar</p>
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </div>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-1.png) no-repeat"
+          >
+            <div class="content">
+              <h3>Premium Material Mastery</h3>
+              <p>
+                Discover top-tier quality with our commitment to premium
+                materials, transforming dreams into reality. From
+                concept to creation, reflects superior craftsmanship and
+                top-tier resources.
+              </p>
+              <a href="#about" class="btn">get started</a>
+            </div>
+          </section>
+
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-2.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>Turning Visions to Reality</h3>
+              <p>
+                Embark on a transformative journey as we bring your visions to
+                life, guiding you with expertise from material selection to
+                meticulous execution.
+              </p>
+              <a href="#about" class="btn">get started</a>
+            </div>
+          </section>
+
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/home-slide-3.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>Concept to Excellence</h3>
+              <p>
+                Specializing in turning ideas into reality, we go beyond top
+                materials, serving as the bridge that transforms your concepts
+                into finely crafted creations for your unparalleled success.
+              </p>
+              <a href="#about" class="btn">get started</a>
+            </div>
+          </section>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+      <h1 class="heading">About us</h1>
+      <div class="row">
+        <div class="video">
+          <video src="images/about-vid.mp4" loop muted autoplay></video>
+        </div>
+        <div class="content">
+          <h3>We will provide you the best materials which you dreamt for!</h3>
+          <p id="aboutText">
+            Elevate your space with precision-installed floor insulation
+            materials, ensuring lasting effectiveness and durability. From
+            meticulous subfloor preparation to expert installation, we deliver
+            solutions that enhance comfort and sustainability.
+          </p>
+          <a href="#about" class="btn" onclick="toggleReadMore()">read more</a>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <h3>10+</h3>
+          <p>years of experience</p>
+        </div>
+
+        <div class="box">
+          <h3>1500+</h3>
+          <p>Project completed</p>
+        </div>
+
+        <div class="box">
+          <h3>1000+</h3>
+          <p>satiesfied clients</p>
+        </div>
+
+        <div class="box">
+          <h3>2500+</h3>
+          <p>materials sold</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+      <h1 class="heading">our services</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/service-8.png" alt="" />
+          <h3>floor insulation</h3>
+          <p>
+            Optimize flooring with our high-quality materials, tailored for
+            efficiency and energy savings.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/service-4.png" alt="" />
+          <h3>Maintenance Services</h3>
+          <p>
+            Routine maintenance for installed floor insulation, including
+            inspections and repairs.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/service-7.png" alt="" />
+          <h3>epoxy insulation</h3>
+          <p>
+            Upgrade floor insulation with our seamless and durable epoxy
+            solution for improved energy efficiency.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/service-3.png" alt="" />
+          <h3>Insulation Consultation</h3>
+          <p>
+            Personalized evaluations for insulation needs, recommending
+            materials and techniques based on flooring type, climate, and energy
+            goals.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/service-2.png" alt="" />
+          <h3>Thermal Inspections</h3>
+          <p>
+            Use thermal imaging to identify insulation gaps in flooring.
+            Non-intrusive assessment helps pinpoint areas needing reinforcement.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/service-6.png" alt="" />
+          <h3>Product Customization</h3>
+          <p>
+            Tailored insulation materials for specific flooring types, ensuring
+            a perfect fit for each project.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/service-5.png" alt="" />
+          <h3>Energy Audits</h3>
+          <p>
+            Comprehensive audits to evaluate energy efficiency, identify heat
+            issues in floors, and suggest tailored insulation solutions for cost
+            reduction.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/service-1.png" alt="" />
+          <h3>Installation Services</h3>
+          <p>
+            Professionally install floor insulation for optimal effectiveness
+            and durability, including subfloor preparation and precise
+            installation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- projects section starts -->
+    <section class="projects" id="projects">
+      <h1 class="heading">our projects</h1>
+      <div class="box-container">
+        <a href="images/project-1.jpg" class="box">
+          <div class="image">
+            <img src="images/project-1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>insulating water tanks</h3>
+              <p>epoxy insulation</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/project-2.jpg" class="box">
+          <div class="image">
+            <img src="images/project-2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>insulating swimming pool</h3>
+              <p>safety, secure</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/project-3.jpg" class="box">
+          <div class="image">
+            <img src="images/project-3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>insulating floor</h3>
+              <p>maintenance, perfection</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/project-4.jpeg" class="box">
+          <div class="image">
+            <img src="images/project-4.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>insulating bathrooms</h3>
+              <p>excellence, mastery</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/project-5.jpg" class="box">
+          <div class="image">
+            <img src="images/project-5.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>insulating bathtubs</h3>
+              <p>safety, creativity</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/project-6.jpg" class="box">
+          <div class="image">
+            <img src="images/project-6.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>insulating roofs</h3>
+              <p>durability, professionalism</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- projects section ends -->
+
+    <!-- reviews section starts -->
+    <section class="reviews">
+      <h1 class="heading">clients reviews</h1>
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <p>
+              Exceptional service! Al-Saeed team is responsive and offered
+              valuable guidance in selecting the perfect insulating materials
+              for our project.
+            </p>
+            <div class="user">
+              <img src="images/pic-1.jpg" alt="" />
+              <div class="info">
+                <h3>Mohamed salman</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <p>
+              Top-notch insulation solutions! We are thoroughly impressed with
+              the effectiveness of the materials provided. A reliable choice for
+              insulation needs.
+            </p>
+            <div class="user">
+              <img src="images/pic-2.jpg" alt="" />
+              <div class="info">
+                <h3>Yousef Al-Thani</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <p>
+              Exceptional insulation quality! Our experience with this company
+              was outstanding. The insulating materials exceeded our
+              expectations.
+            </p>
+
+            <div class="user">
+              <img src="images/pic-3.jpg" alt="" />
+              <div class="info">
+                <h3>Noura El-Mansoori</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <p>
+              Reliable durability! These insulating materials have proven to be
+              long-lasting and effective in temperature control.
+            </p>
+            <div class="user">
+              <img src="images/pic-4.jpg" alt="" />
+              <div class="info">
+                <h3>Hassan Mohammed</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <p>
+              Efficient insulation! These materials significantly boosted our
+              building's energy efficiency. Highly recommend their products.
+            </p>
+            <div class="user">
+              <img src="images/pic-5.jpg" alt="" />
+              <div class="info">
+                <h3>Faisal Abdullah</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <p>
+              Impressive variety! The range of insulating materials offered
+              allowed us to find the perfect, tailored solution for our specific
+              needs.
+            </p>
+            <div class="user">
+              <img src="images/pic-6.jpg" alt="" />
+              <div class="info">
+                <h3>Aisha Khalifa</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- reviews section ends -->
+
+    <!-- pricing section starts -->
+    <section class="pricing" id="pricing">
+      <h1 class="heading">our pricing</h1>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-home"></i>
+          <h3>basic plan</h3>
+          <div class="price"><span>$</span>250 <span>/mo</span></div>
+          <div class="list">
+            <p>insulating floor</p>
+            <p>epoxy insulating</p>
+            <p>material supply</p>
+            <p>maintenance</p>
+            <p>24/7 support</p>
+          </div>
+          <a href="#" class="btn">choose plan</a>
+        </div>
+        <div class="box">
+          <i class="fas fa-building"></i>
+          <h3>premium plan</h3>
+          <div class="price"><span>$</span>650 <span>/mo</span></div>
+          <div class="list">
+            <p>insulating floor</p>
+            <p>epoxy insulating</p>
+            <p>material supply</p>
+            <p>maintenance</p>
+            <p>24/7 support</p>
+          </div>
+          <a href="#" class="btn">choose plan</a>
+        </div>
+        <div class="box">
+          <i class="fas fa-city"></i>
+          <h3>ultimate plan</h3>
+          <div class="price"><span>$</span>1250 <span>/mo</span></div>
+          <div class="list">
+            <p>insulating floor</p>
+            <p>epoxy insulating</p>
+            <p>material supply</p>
+            <p>maintenance</p>
+            <p>24/7 support</p>
+          </div>
+          <a href="#" class="btn">choose plan</a>
+        </div>
+      </div>
+    </section>
+    <!-- pricing section ends -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+      <h1 class="heading">contact us</h1>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97114.2543055849!2d51.55766946280701!3d25.235912207127672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c534ffdce87f%3A0x44d9319f78cfd4b1!2z2KfZhNiv2YjYrdip2Iwg2YLYt9ix!5e0!3m2!1sar!2seg!4v1705952906960!5m2!1sar!2seg"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <form action="">
+          <h3>get in touch</h3>
+          <input type="text" placeholder="name" class="box" />
+          <input type="email" placeholder="email" class="box" />
+          <input type="number" placeholder="phone" class="box" />
+          <textarea
+            name=""
+            placeholder="message"
+            id=""
+            cols="30"
+            rows="5"
+            class="box"
+          ></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+      </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- blogs section starts -->
+    <section class="blogs" id="blogs">
+      <h1 class="heading">our blogs</h1>
+      <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>blog title goes here</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                aliquam!
+              </p>
+              <a href="#about" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>blog title goes here</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                aliquam!
+              </p>
+              <a href="#about" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>blog title goes here</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                aliquam!
+              </p>
+              <a href="#about" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-4.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>blog title goes here</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                aliquam!
+              </p>
+              <a href="#about" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-5.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>blog title goes here</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                aliquam!
+              </p>
+              <a href="#about" class="btn">read more</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="images/blog-6.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>blog title goes here</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                aliquam!
+              </p>
+              <a href="#about" class="btn">read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blogs section ends -->
+
+    <!-- client logo section starts -->
+    <section class="logo-container">
+      <div class="swiper logo-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="images/client-logo-1.png" alt="" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/client-logo-2.png" alt="" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/client-logo-3.png" alt="" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/client-logo-4.png" alt="" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/client-logo-5.png" alt="" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/client-logo-6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- client logo section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+      <div class="links">
+        <a class="btn" href="#home">Home</a>
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="#services">Services</a>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#pricing">Pricing</a>
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn" href="#blogs">Blogs</a>
+      </div>
+      <div class="credit">
+        Copyright Al <span>Saeed </span>company. ©| All Rights Reserved 2024 ®
+      </div>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- custom js file links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      lightGallery(document.querySelector(".projects .box-container"));
+    </script>
+  </body>
+</html>
